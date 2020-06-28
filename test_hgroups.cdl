@@ -1,0 +1,276 @@
+netcdf test_hgroups {
+dimensions:
+	recNum = 74 ;
+variables:
+	string UTC_time(recNum) ;
+		UTC_time:name = "time" ;
+		UTC_time:unit = "none" ;
+
+group: mozaic_flight_2012030403540535_ascent {
+  variables:
+  	double air_press(recNum) ;
+  		air_press:name = "air_pressure" ;
+  		air_press:unit = "Pa" ;
+  	double CO(recNum) ;
+  		CO:name = "mole_fraction_of_carbon_monoxide_in_air" ;
+  		CO:unit = "ppb" ;
+  	double O3(recNum) ;
+  		O3:name = "mole_fraction_of_ozone_in_air" ;
+  		O3:unit = "ppb" ;
+  	double altitude(recNum) ;
+  		altitude:name = "barometric_altitude" ;
+  		altitude:unit = "m" ;
+  	double lat ;
+  		lat:standard_name = "latitude" ;
+  		lat:units = "degree_north" ;
+  	double lon ;
+  		lon:standard_name = "longitude" ;
+  		lon:units = "degree_east" ;
+
+  // group attributes:
+  		:airport_dep = "TLV" ;
+  		:flight = "2012030403540535" ;
+  		:level = "calibrated" ;
+  		:airport_arr = "FRA" ;
+  		:mission = "mozaic" ;
+  		:time_dep = "2012-03-04 03:54:05" ;
+  		:aircraft = "3" ;
+  		:link = "http://www.iagos.fr/extract" ;
+  		:phase = "ascent" ;
+  		:time_arr = "2012-03-04 08:01:44" ;
+  } // group mozaic_flight_2012030403540535_ascent
+
+group: mozaic_flight_2012030321335035_descent {
+  dimensions:
+  	air_press = 76 ;
+  variables:
+  	double air_press(air_press) ;
+  		air_press:name = "air_pressure" ;
+  		air_press:unit = "Pa" ;
+  	double CO(air_press) ;
+  		CO:name = "mole_fraction_of_carbon_monoxide_in_air" ;
+  		CO:unit = "ppb" ;
+  	double O3(air_press) ;
+  		O3:name = "mole_fraction_of_ozone_in_air" ;
+  		O3:unit = "ppb" ;
+  	double altitude(air_press) ;
+  		altitude:name = "barometric_altitude" ;
+  		altitude:unit = "m" ;
+  	string UTC_time(air_press) ;
+  		UTC_time:name = "time" ;
+  		UTC_time:unit = "none" ;
+  	double lat ;
+  		lat:standard_name = "latitude" ;
+  		lat:units = "degree_north" ;
+  	double lon ;
+  		lon:standard_name = "longitude" ;
+  		lon:units = "degree_east" ;
+
+  // group attributes:
+  		:airport_dep = "FRA" ;
+  		:flight = "2012030321335035" ;
+  		:level = "calibrated" ;
+  		:airport_arr = "TLV" ;
+  		:mission = "mozaic" ;
+  		:time_dep = "2012-03-03 09:33:50" ;
+  		:aircraft = "3" ;
+  		:link = "http://www.iagos.fr/extract" ;
+  		:phase = "descent" ;
+  		:time_arr = "2012-03-04 01:05:08" ;
+  } // group mozaic_flight_2012030321335035_descent
+
+group: mozaic_flight_2012030403540535_descent {
+  dimensions:
+  	air_press = 78 ;
+  variables:
+  	double air_press(air_press) ;
+  		air_press:name = "air_pressure" ;
+  		air_press:unit = "Pa" ;
+  	double CO(air_press) ;
+  		CO:name = "mole_fraction_of_carbon_monoxide_in_air" ;
+  		CO:unit = "ppb" ;
+  	double O3(air_press) ;
+  		O3:name = "mole_fraction_of_ozone_in_air" ;
+  		O3:unit = "ppb" ;
+  	double altitude(air_press) ;
+  		altitude:name = "barometric_altitude" ;
+  		altitude:unit = "m" ;
+  	string UTC_time(air_press) ;
+  		UTC_time:name = "time" ;
+  		UTC_time:unit = "none" ;
+  	double lat ;
+  		lat:standard_name = "latitude" ;
+  		lat:units = "degree_north" ;
+  	double lon ;
+  		lon:standard_name = "longitude" ;
+  		lon:units = "degree_east" ;
+
+  // group attributes:
+  		:airport_dep = "TLV" ;
+  		:flight = "2012030403540535" ;
+  		:level = "calibrated" ;
+  		:airport_arr = "FRA" ;
+  		:mission = "mozaic" ;
+  		:time_dep = "2012-03-04 03:54:05" ;
+  		:aircraft = "3" ;
+  		:link = "http://www.iagos.fr/extract" ;
+  		:phase = "descent" ;
+  		:time_arr = "2012-03-04 08:01:44" ;
+  } // group mozaic_flight_2012030403540535_descent
+
+group: mozaic_flight_2012030412545335_ascent {
+  dimensions:
+  	air_press = 60 ;
+  variables:
+  	double air_press(air_press) ;
+  		air_press:name = "air_pressure" ;
+  		air_press:unit = "Pa" ;
+  	double CO(air_press) ;
+  		CO:name = "mole_fraction_of_carbon_monoxide_in_air" ;
+  		CO:unit = "ppb" ;
+  	double O3(air_press) ;
+  		O3:name = "mole_fraction_of_ozone_in_air" ;
+  		O3:unit = "ppb" ;
+  	double altitude(air_press) ;
+  		altitude:name = "barometric_altitude" ;
+  		altitude:unit = "m" ;
+  	string UTC_time(air_press) ;
+  		UTC_time:name = "time" ;
+  		UTC_time:unit = "none" ;
+  	double lat ;
+  		lat:standard_name = "latitude" ;
+  		lat:units = "degree_north" ;
+  	double lon ;
+  		lon:standard_name = "longitude" ;
+  		lon:units = "degree_east" ;
+
+  // group attributes:
+  		:airport_dep = "FRA" ;
+  		:flight = "2012030412545335" ;
+  		:level = "calibrated" ;
+  		:airport_arr = "NGO" ;
+  		:mission = "mozaic" ;
+  		:time_dep = "2012-03-04 12:54:53" ;
+  		:aircraft = "3" ;
+  		:link = "http://www.iagos.fr/extract" ;
+  		:phase = "ascent" ;
+  		:time_arr = "2012-03-05 12:21:37" ;
+  } // group mozaic_flight_2012030412545335_ascent
+
+group: mozaic_flight_2012030419144751_ascent {
+  dimensions:
+  	air_press = 60 ;
+  variables:
+  	double air_press(air_press) ;
+  		air_press:name = "air_pressure" ;
+  		air_press:unit = "Pa" ;
+  	double CO(air_press) ;
+  		CO:name = "mole_fraction_of_carbon_monoxide_in_air" ;
+  		CO:unit = "ppb" ;
+  	double O3(air_press) ;
+  		O3:name = "mole_fraction_of_ozone_in_air" ;
+  		O3:unit = "ppb" ;
+  	double altitude(air_press) ;
+  		altitude:name = "barometric_altitude" ;
+  		altitude:unit = "m" ;
+  	string UTC_time(air_press) ;
+  		UTC_time:name = "time" ;
+  		UTC_time:unit = "none" ;
+  	double lat ;
+  		lat:standard_name = "latitude" ;
+  		lat:units = "degree_north" ;
+  	double lon ;
+  		lon:standard_name = "longitude" ;
+  		lon:units = "degree_east" ;
+
+  // group attributes:
+  		:airport_dep = "FRA" ;
+  		:flight = "2012030419144751" ;
+  		:level = "calibrated" ;
+  		:airport_arr = "WDH" ;
+  		:mission = "mozaic" ;
+  		:time_dep = "2012-03-04 07:14:47" ;
+  		:aircraft = "2" ;
+  		:link = "http://www.iagos.fr/extract" ;
+  		:phase = "ascent" ;
+  		:time_arr = "2012-03-05 04:49:45" ;
+  } // group mozaic_flight_2012030419144751_ascent
+
+group: mozaic_flight_2012030319051051_descent {
+  dimensions:
+  	air_press = 78 ;
+  variables:
+  	double air_press(air_press) ;
+  		air_press:name = "air_pressure" ;
+  		air_press:unit = "Pa" ;
+  	double CO(air_press) ;
+  		CO:name = "mole_fraction_of_carbon_monoxide_in_air" ;
+  		CO:unit = "ppb" ;
+  	double O3(air_press) ;
+  		O3:name = "mole_fraction_of_ozone_in_air" ;
+  		O3:unit = "ppb" ;
+  	double altitude(air_press) ;
+  		altitude:name = "barometric_altitude" ;
+  		altitude:unit = "m" ;
+  	string UTC_time(air_press) ;
+  		UTC_time:name = "time" ;
+  		UTC_time:unit = "none" ;
+  	double lat ;
+  		lat:standard_name = "latitude" ;
+  		lat:units = "degree_north" ;
+  	double lon ;
+  		lon:standard_name = "longitude" ;
+  		lon:units = "degree_east" ;
+
+  // group attributes:
+  		:airport_dep = "WDH" ;
+  		:flight = "2012030319051051" ;
+  		:level = "calibrated" ;
+  		:airport_arr = "FRA" ;
+  		:mission = "mozaic" ;
+  		:time_dep = "2012-03-03 07:05:10" ;
+  		:aircraft = "2" ;
+  		:link = "http://www.iagos.fr/extract" ;
+  		:phase = "descent" ;
+  		:time_arr = "2012-03-04 04:46:40" ;
+  } // group mozaic_flight_2012030319051051_descent
+
+group: mozaic_flight_2012030421382353_ascent {
+  dimensions:
+  	air_press = 75 ;
+  variables:
+  	double air_press(air_press) ;
+  		air_press:name = "air_pressure" ;
+  		air_press:unit = "Pa" ;
+  	double CO(air_press) ;
+  		CO:name = "mole_fraction_of_carbon_monoxide_in_air" ;
+  		CO:unit = "ppb" ;
+  	double O3(air_press) ;
+  		O3:name = "mole_fraction_of_ozone_in_air" ;
+  		O3:unit = "ppb" ;
+  	double altitude(air_press) ;
+  		altitude:name = "barometric_altitude" ;
+  		altitude:unit = "m" ;
+  	string UTC_time(air_press) ;
+  		UTC_time:name = "time" ;
+  		UTC_time:unit = "none" ;
+  	double lat ;
+  		lat:standard_name = "latitude" ;
+  		lat:units = "degree_north" ;
+  	double lon ;
+  		lon:standard_name = "longitude" ;
+  		lon:units = "degree_east" ;
+
+  // group attributes:
+  		:airport_dep = "FRA" ;
+  		:flight = "2012030421382353" ;
+  		:level = "calibrated" ;
+  		:airport_arr = "TLV" ;
+  		:mission = "mozaic" ;
+  		:time_dep = "2012-03-04 09:38:23" ;
+  		:aircraft = "4" ;
+  		:link = "http://www.iagos.fr/extract" ;
+  		:phase = "ascent" ;
+  		:time_arr = "2012-03-05 01:13:34" ;
+  } // group mozaic_flight_2012030421382353_ascent
+}
